@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>Order Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href ="style.css">
+<body>
+
+  <header>
+      <div class="container">
+        <h1 class="logo"></h1>
+				<img src="logo.png" alt="theKitchen Restaurant logo" class="logo" id="logo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Pricing</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="newsevents.html">News & Events</a></li>
+            <li><a href="order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <p></br></p>
+    <section>
+      <div class="container">
+        <div class="order-grid">
+          <div class="order-menu">
+            <h1 class="order-text">ORDER</h1><br>
+              <select id="dropdown-menu" name="menu-select">
+              <option id="select-option" label="-- Please select an option --">
+              <option id="chicken-pizza" label="Chicken Pizza -- $9.50" value="9.50">
+              <option id="japanese-ramen" label="Japanese-style Ramen -- $8.99" value="8.99">
+              <option id="chicken-curry" label="Chicken Curry -- $7.99" value="7.99">
+              <option id="ratatouille" label="Ratatouille -- $10.99" value="10.99">
+              <option id="french-toast" label="French Toast -- $5.99" value="5.99">
+              <option id="lamb-salad" label="Lamb Salad -- $7.99" value="7.99">
+              <option id="fried-egg" label="Fried Egg with Leeks -- $6.99" value="6.99">
+              <option id="lamb-pasta" label="Lamb Pasta -- $8.99" value="8.99">
+              <option id="island-duck" label="Island Duck -- $11.99" value="11.99">
+              <option id="steak" label="Steak -- $9.99" value="9.99">
+              <option id="lasagna" label="Lasagna -- $10.99" value="10.99">
+              <option id="shrimp-fried" label="Shrimp Fried Rice -- $8.99" value="8.99">
+              </select>
+          <div class="div-quantity">
+            <h1 class="quantity">QUANTITY</h1>
+              <input type="number" id="qty" onchange="getPrice();" required><br>
+            </div>
+          <p><br></p>
+
+        <div class="total-price">Total Price:</div>
+        <br>
+        <div class="output">
+          <output type="text" id="tr" name="totalprice" value:"0.00" onchange="getPrice();" required><br>
+          </div>
+        <br><br>
+        <h1 class="address-title">ADDRESS</h1><br>
+          <div class="Street">
+            <p class="address-street">Street:</p><br>
+            <input type="text" id="street" placeholder="Enter your street name" required><br>
+          </div>
+          <br>
+          <div class="City">
+            <p class="address-city">City:</p><br>
+            <input type="text" id="city" placeholder="Enter city" required><br>
+          </div>
+          <br>
+          <div class="Eircode">
+            <p class="address-eircode">Eircode:</p><br>
+            <input type="text" id="eircode" placeholder="Enter eircode" required><br>
+          </div>
+        <br><br>
+        <div class="make-order">
+          <form action="orderPayment.html">
+          <input type="submit" id="order-submit" value="Go to Payment Page">
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+      <p></br></p>
+      <p></br></p>
+      <p></br></p>
+
+      <section>
+  			<footer id="footer">
+  				<br>
+  			<div class="footer-heading">Check out our social media accounts: </div><br>
+  					<div class="fa fa-facebook">
+  						<a href=#></a>
+  					</div>
+  					<div class="fa fa-twitter">
+  						<a href=#></a>
+  					</div>
+  					<div class="fa fa-instagram">
+  						<a href=#></a>
+  					</div>
+  					<div class="fa fa-pinterest">
+  						<a href=#></a>
+  					</div>
+  			</footer>
+  		</section>
+<script type="text/javascript" src="order.js"></script>
+</body>
+</html>

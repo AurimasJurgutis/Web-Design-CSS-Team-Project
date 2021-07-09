@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+	margin: 0;
+	background-image: url(Restaurant.jpeg);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: white;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  height: 0px;
+  background-color: white;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+* {
+	box-sizing:border-box;
+}
+
+.logo {
+	width: 8%
+}
+
+.home-header {
+	text-align: center;
+	margin: auto;
+	color: white;
+}
+
+.order {
+	text-align: center;
+	margin: auto;
+	color: white;
+	background-color: #ff6600;
+	padding: 20px;
+	width: 40%;
+}
+
+.button1 {
+  border-radius: 4px;
+  background-color: #08041A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* MENU */
+
+.menu{
+    width: 80%;
+		margin: auto;
+    padding: 14px 20px;
+    background-color: white;
+		height: 600px;
+}
+
+.menu-page{
+    width: 80%;
+		margin: auto;
+    padding: 14px 20px;
+    background-color: white;
+		height: 1500px;
+}
+
+.menu-heading{
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 0 0 1rem rgba(0,0,0,.9);
+    text-transform: uppercase;
+    color: black;
+    font-weight: 800;
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-rows:repeat(2, 1fr) ;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    grid-gap: 1rem;
+}
+
+.heading-secondary{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.menu-img1{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("pizza.jpg");
+}
+
+.menu-img2{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("japanese-ramen.jpg");
+}
+
+.menu-img3{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("chicken-curry.jpg");
+}
+
+.menu-img4{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("ratatouille.jpg");
+}
+
+.menu-img5{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("french-toast.jfif");
+}
+
+.menu-img6{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("lamb-salad.jfif");
+}
+
+.menu-img7{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("fried-egg.jpg");
+}
+
+.menu-img8{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("lamb-pasta.jpg");
+}
+
+.menu-img9{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("island-duck.jfif");
+}
+
+.menu-img10{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("steak.jpg");
+}
+
+.menu-img11{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("lasagna.jfif");
+}
+
+.menu-img12{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("shrimp-fried-rice.jfif");
+}
+
+.menu-container{
+    width: 100%;
+    height: 25rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+
+.menu-title{
+		color: black;
+		font-size: 18px;
+    text-align: center;
+}
+
+.price{
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #da6b1d;
+    text-shadow: 0 .4rem 2rem rgba(0,0,0,.4);
+}
+
+.menu-d-text {
+	position: absolute;
+	position: absolute;
+	top: 30px;
+	right: 70px;
+	width: 600px;
+	height: 100px;
+	text-align: center;
+	margin: auto;
+}
+
+.menu-d {
+	position: absolute;
+	top: 60px;
+	right: 330px;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	margin: auto;
+}
+
+.menu-directory {
+	position: relative;
+	background-color: #ff6600;
+	width: 50%;
+	height: 150px;
+	margin: auto;
+}
+
+
+.button2 {
+  border-radius: 4px;
+  background-color: #08041A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  width: 300px;
+	height: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#footer {
+  bottom: 0;
+	background-color: #e6e6e6;
+	height: 160px;
+	text-align: center;
+}
+
+.footer-heading {
+	text-align: center;
+	font: 18px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.pricing-grid{
+    display: grid;
+    grid-template-rows:repeat(3, 1fr) ;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    grid-gap: 1rem;
+}
+
+.order-grid{
+  display: grid;
+  grid-template-rows:repeat(1, 1fr) ;
+  grid-template-columns: repeat(1, 1fr);
+  justify-self: center;
+  grid-gap: 1rem;
+}
+.order-menu {
+	text-align: center;
+	background-color: white;
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+	height: 1200px;
+}
+
+#dropdown-menu {
+	text-align: center;
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 25px;
+  width: 50%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.order-text {
+	text-align: center;
+	font: 24px;
+	color: black;
+}
+
+.active, #dropdown-menu:hover {
+  background-color: #555;
+}
+
+.total-price {
+	font: 25px;
+	text-align: center;
+}
+
+#totalprice {
+	text-align: center;
+	color: black;
+}
+
+input[id="order-submit"] {
+	width: 20%;
+	padding: 12px 20px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	box-shadow: 1px 2px;
+	background-color: #0ED100;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.quantity {
+	font: 25px;
+	text-align: center;
+}
+
+input[id="qty"] {
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 8%;
+	padding: 4px 8px;
+}
+
+.address-title {
+	text-align: center;
+}
+
+.address-street {
+	text-align: center;
+}
+
+.address-city {
+	text-align: center;
+}
+
+.address-eircode {
+	position: relative;
+}
+
+input[id="street"] {
+	width: 30%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+}
+
+input[id="city"] {
+	width: 30%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+}
+
+input[id="eircode"]{
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+}
+
+/* Card Payment Page CSS */
+.cardPayment {
+	width:360px;
+	height:370px;
+	margin:60px auto 0;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background-color: #fff;
+}
+
+.cpHeader {
+	height: 60px;
+	padding: 20px 30px 0;
+	border-bottom: 1px solid #e1e8ee;
+}
+
+.cpBody {
+	height: 340px;
+	padding: 30px 30px 20px;
+}
+
+.cpTitle {
+	font-size: 24px;
+	margin:0;
+	color: #5e6977;
+}
+
+.cardName,
+.cardNumber,
+.cardMonth select,
+.cardYear select,
+.cvv input {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 14px;
+}
+
+.cardName,
+.cardNumber,
+.cardMonth select,
+.cardYear select {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 14px;
+}
+
+.cardName,
+.cardNumber,
+.cvvNumber,
+.cvv input,
+.cardMonth select,
+.cardYear select {
+	opacity: .7;
+	color: #86939e;
+}
+
+.cardName,
+.cardNumber {
+	width: 100%;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	border: 2px solid #e1e8ee;
+	border-radius: 6px;
+}
+
+.cardMonth select,
+.cardYear select {
+	width: 145px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+    background-position: 85% 50%;
+}
+
+.cardMonth select {
+	float: left;
+}
+
+.cardYear select {
+	float:right;
+}
+
+.cvv input {
+	float: left;
+	width: 145px;
+	padding-left: 20px;
+	border: 2px solid #e1e8ee;
+	border-radius: 6px;
+	background: #fff;
+}
+
+.cvvNumber {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 16px;
+	float: right;
+	margin-bottom: 20px;
+}
+
+.cvv p {
+	margin-top: 6px;
+}
+
+.payNow {
+	cursor: pointer;
+	font-size: 16px;
+	width: 100%;
+	border-color: transparent;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	background: purple;
+}
+
+.payNow a {
+	color: #fff;
+
+}
+/* End of Card Payment Page CSS */
+
+/* About Us Page CSS */
+.about-us {
+	text-align: center;
+	margin: auto;
+	color: white;
+	background-color: #ff6600;
+	padding: 20px;
+	width: 60%;
+}
+
+.address {
+	text-align: center;
+	margin: auto;
+	color: white;
+	background-color: #ff6600;
+	padding: 20px;
+	width: 60%;
+	text-decoration: none;
+}
+
+.chef {
+	text-align: center;
+	margin: auto;
+	color: white;
+	background-color: #ff6600;
+	padding: 20px;
+	width: 60%;
+}
+
+.contacts {
+	text-align: center;
+	margin: auto;
+	color: white;
+	background-color: #ff6600;
+	padding: 20px;
+	width: 60%;
+}
+
+#chefPicture {
+	width: 30%;
+	border-radius: 5px;
+	float:left;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* End of About Us Page CSS */
+
+/* Reviews Page CSS */
+
+.review-head {
+	text-align: center;
+	margin: auto;
+	color: white;
+	background-color: #ff6600;
+	padding: 20px;
+	width: 60%;
+}
+
+.review1 {
+	text-align: center;
+	margin: auto;
+	color: white;
+	background-color: #ff6600;
+	padding: 20px;
+	width: 60%;
+}
+
+.review2 {
+	text-align: center;
+	margin: auto;
+	color: white;
+	background-color: #ff6600;
+	padding: 20px;
+	width: 60%;
+}
+
+#gordonImg {
+	width: 40%;
+	height: 225px;
+	border-radius: 5px;
+	margin-bottom: 50px;
+}
+
+#guyImg {
+	width: 40%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.review1 h3{
+	font-size: 28px;
+}
+
+.review2 h3{
+	font-size: 28px;
+}
+
+/* Gordan Ramsay Modal */
+
+#gordonImg {
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#gordonImg:hover {opacity: 0.7;}
+
+.grModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+  color: #444;
+}
+
+.grmContent {
+	text-align:center;
+	border: 1px solid black;
+	border-radius: 6px;
+	margin: 60px auto 0;
+	width: 25%;
+	background-color: white;
+	color: #444;
+	font-size: 20px;
+}
+
+.grClose {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.grClose:hover,
+.grClose:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Guy Fieri Modal */
+#guyImg {
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#guyImg:hover {opacity: 0.7;}
+
+.fModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+  color: #444;
+}
+
+.fmContent {
+	text-align:center;
+	border: 1px solid black;
+	border-radius: 6px;
+	margin: 60px auto 0;
+	width: 25%;
+	background-color: white;
+	color: #444;
+	font-size: 20px;
+}
+
+.fClose {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.fClose:hover,
+.fClose:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* End of Reviews Page CSS */
+
+/* News and Events Page CSS */
+
+.news-head {
+	text-align: center;
+	margin: auto;
+	color: white;
+	background-color: #ff6600;
+	padding: 20px;
+	width: 60%;
+}
+
+.news1 {
+	text-align: center;
+	margin: auto;
+	color: black;
+	background-color: white;
+	padding: 20px;
+	width: 60%;
+
+}
+
+.news2 {
+	text-align: center;
+	margin: auto;
+	color: black;
+	background-color: white;
+	padding: 20px;
+	width: 60%;
+}
+
+#gardenImg {
+	width: 80%;
+	border-radius: 5px;
+	margin-top: 5%;
+}
+
+#culture {
+	width: 80%;
+	height: 280px;
+	border-radius: 5px;
+}
+
+.news1 h3,
+.news2 h4 {
+	font-size: 28px;
+}
+
+.news1 p,
+.news2 p {
+	font-size: 18px;
+}

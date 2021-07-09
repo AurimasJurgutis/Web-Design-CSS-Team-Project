@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>Order Payment Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href ="style.css">
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type= "text/javascript" defer src="cardPayment.js"></script>
+  <header>
+      <div class="container">
+        <h1 class="logo"></h1>
+				<img src="logo.png" alt="theKitchen Restaurant logo" class="logo" id="logo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Pricing</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="newsevents.html">News & Events</a></li>
+            <li><a href="order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+	<!-- Card Payment Form -->
+	<form name = "cardPayment" class="cardPayment" action = "index.html" onsubmit="return validation()">
+		<div class = "cpHeader">
+			<h6 class = "cpTitle">Card Payment Details.</h6>
+		</div>
+
+		<div class = "cpBody">
+			<!-- Card Name & Number -->
+			<input type="text" class="cardName" name="cardName" placeholder = "Enter Cardholder's name here." required>
+			<input type="int" class="cardNumber" name="cardNumber" placeholder = "Enter your card number here." required>
+			<!-- Card Month And Year Drop Down -->
+			<div class = "cardDate">
+				<div class = "cardMonth">
+					<select name = "Month">
+						<option value = "jan">January</option>
+						<option value = "feb">February</option>
+						<option value = "march">March</option>
+						<option value = "april">April</option>
+						<option value = "may">May</option>
+						<option value = "june">June</option>
+						<option value = "july">July</option>
+						<option value = "aug">August</option>
+						<option value = "sept">September</option>
+						<option value = "oct">October</option>
+						<option value = "nov">November</option>
+						<option value = "dec">December</option>
+					</select>
+				</div>
+				<div class = "cardYear">
+					<select name = "Year">
+						<option value = "2021">2021</option>
+						<option value = "2022">2022</option>
+						<option value = "2023">2023</option>
+						<option value = "2024">2024</option>
+						<option value = "2025">2025</option>
+						<option value = "2026">2026</option>
+						<option value = "2027">2027</option>
+						<option value = "2028">2028</option>
+						<option value = "2029">2029</option>
+						<option value = "2030">2030</option>
+					</select>
+				</div>
+			</div>
+			<!-- CVV Entry -->
+			<div class = "cpCVV">
+				<div class = "cvv">
+					<input id="cvvNumber" placeholder = "Enter CVV here" required>
+				</div>
+				<div class = "cvvNumber">
+					<p> Enter your 3 digit CVV found on the back of your card here.</p>
+				</div>
+			</div>
+			<!-- Pay Now Button -->
+			<button type = "submit" id = "payBtn" class = "payNow">Pay Now</button>
+		</div>
+	</form>
+
+</body>
+</html>
